@@ -60,7 +60,7 @@
   const dailyHoursInputLabel = document.createElement("label");
   dailyHoursInputLabel.classList.add("metric-subheading");
   dailyHoursInputLabel.for = "dailyHours";
-  dailyHoursInputLabel.innerText = "Hour per day:";
+  dailyHoursInputLabel.innerText = "Hours per day:";
   dailyHoursInputLabel.style.marginBottom = "0";
   dailyHoursInputLabel.style.marginRight = "0.5rem";
 
