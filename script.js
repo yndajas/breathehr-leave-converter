@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         BreatheHR leave calculator: hours and minutes to days
+// @name         Breathe leave calculator: hours and minutes to days
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Show an estimation of available leave in days when it's calculated in hours
 // @author       yndajas (they)
 // @license      MIT
@@ -37,7 +37,9 @@
   const hoursAndMinutes = timeElement.innerText
     .split(" ")
     .map((time) => time.substring(0, time.length - 1));
-  const hours = parseFloat(hoursAndMinutes[0], 10) + (hoursAndMinutes[1] ? hoursAndMinutes[1] / 60 : 0);
+  const hours =
+    parseFloat(hoursAndMinutes[0], 10) +
+    (hoursAndMinutes[1] ? hoursAndMinutes[1] / 60 : 0);
 
   let dailyHours = 7.75;
   let days = calculateDays();
