@@ -37,7 +37,7 @@
   const hoursAndMinutes = timeElement.innerText
     .split(" ")
     .map((time) => time.substring(0, time.length - 1));
-  const hours = parseFloat(hoursAndMinutes[0], 10) + hoursAndMinutes[1] / 60;
+  const hours = parseFloat(hoursAndMinutes[0], 10) + (hoursAndMinutes[1] ? hoursAndMinutes[1] / 60 : 0);
 
   let dailyHours = 7.75;
   let days = calculateDays();
