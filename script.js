@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BreatheHR leave calculator: hours and minutes to days
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  Show an estimation of available leave in days when it's calculated in hours
 // @author       yndajas (they)
 // @license      MIT
