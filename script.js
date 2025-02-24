@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Breathe leave calculator: hours and minutes to days
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Show an estimation of available leave in days when it's calculated in hours
 // @author       yndajas (they)
 // @license      MIT
@@ -14,7 +14,7 @@
   "use strict";
 
   const leaveCardBodyElementSelector =
-    "[data-element-id='my-leave-widget'] > .card__content > .card__body-top";
+    "[data-element-id='my-leave-widget'] > .bdds-card__content > .bdds-card__body-top";
 
   const timeElement = () =>
     document.querySelector(`${leaveCardBodyElementSelector} h4`);
